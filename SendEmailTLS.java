@@ -29,8 +29,8 @@ public class SendEmailTLS implements Serializable {
     public void SendMail() throws IOException {
         Mail_count += 1;
 
-        final String username = "ludeesha1829@gmail.com";
-        final String password = "uylyafomwswixaom";
+        final String username = "test@gmail.com";
+        final String password = "passwrd";
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");
@@ -48,7 +48,7 @@ public class SendEmailTLS implements Serializable {
         try {
 
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("ludeesha1829@gmail.com"));
+            message.setFrom(new InternetAddress("test@gmail.com"));
             message.setRecipients(
                     Message.RecipientType.TO,
                     InternetAddress.parse(Email_address)
