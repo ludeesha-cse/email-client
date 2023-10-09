@@ -29,6 +29,7 @@ public class Email_Client {
             case 1:
                 // input format - Official: nimal,nimal@gmail.com,ceo
                 // code to add a new recipient
+                // with this, the details of a recipient is added to a text file.
                 System.out.println("input format-Official: nimal,nimal@gmail.com,ceo");
                 Scanner scanner1=new Scanner(System.in);
                 String line =scanner1.nextLine();

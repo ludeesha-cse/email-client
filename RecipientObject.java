@@ -4,6 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class RecipientObject implements Serializable {
+
+    //attributes of the RecipientObject
     private String Mail;
     private String Name;
     private String relation;
@@ -19,6 +21,8 @@ public class RecipientObject implements Serializable {
         String strDate = f.format(new Date());
         return strDate;
     }
+
+    // used to create a recipient object by reading the recipient stored text file
     public void Create_recipient(String Line){
         Date=Date();
         String splitted[]= Line.split(",|: ");
